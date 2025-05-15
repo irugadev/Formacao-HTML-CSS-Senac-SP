@@ -90,6 +90,10 @@ h2 {
         flex-shrink: 1;
         /* permite reduzir o tamanho */
     }
+    a{
+        text-decoration: none; /* Tirar sublinhado */
+        color: #000;
+    }
 }
 
 .card {
