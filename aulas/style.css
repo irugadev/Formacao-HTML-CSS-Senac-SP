@@ -16,7 +16,6 @@ body {
     /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: 'Poppins', sans-serif;
 }
-
 header {
     background-color: #0e365f;
     /*Cor de fundo*/
@@ -26,12 +25,20 @@ header {
     padding: 20px 0px 20px 0px;
     /* Top Right Botton Left - ordem no sentido horario */
 }
-
 footer {
     background-color: #f1f1f1;
     padding: 30px;
     text-align: center;
     color: #777;
+}
+
+/* formataçao generica paras os links */
+a{
+    text-decoration: none;      /* retirar o sublinhado dos links */
+    color: #391299;            /* alterar a cor */
+}
+a:hover{
+    text-decoration: underline;     /* volta o sublinhado quando passa o mouse em cima */
 }
 
 /* formataçao da home */
@@ -174,5 +181,35 @@ h2 {
 
     a:nth-child(5) {
         background-color: #000;
+    }
+}
+/* Link voltar - rodape da pagina */
+.voltar{ 
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* formataçao do grid de clinica */
+.grid-clinica{
+    display: flex;      /* opçao por layout em grid (grades). O padrao para o display é block */
+    justify-content: space-between;     /* Faz o alinhamento pelas margens externas (direita e esquerda) */
+    gap: 1.5rem;
+    align-items: flex-start;
+    div{
+        flex-grow: 1;   /* Permite expandir a largura */
+        flex-shrink: 1; /* Permite reduzir a largura */
+        flex-basis: 300px;  /*Tamanho inicial */
+    }
+    img{
+        width: 100%;    /* imagem responsiva */
+    }
+    h2{
+        text-align: start; /* alinha a esquerda */
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+    p{
+        line-height: 150%; /* Altura da linha/margem */
+        margin-bottom: 15px;    /* Marge inferior */
     }
 }
