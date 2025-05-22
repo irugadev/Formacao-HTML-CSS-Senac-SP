@@ -67,7 +67,7 @@ h2 {
         /* CSS nesting (alinhamento de css) */
         color: #444;
         /*cor da letra */
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         /*tamanho da letra */
         line-height: 150%;
         /*Altura da linha, espacamento entre linhas */
@@ -211,5 +211,36 @@ h2 {
     p{
         line-height: 150%; /* Altura da linha/margem */
         margin-bottom: 15px;    /* Marge inferior */
+    }
+    ul, ol{
+        padding-left: 20px;
+        list-style: square;
+        li{
+            line-height: 175%;
+        }
+    }
+}
+.grid-especialidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    * {
+        flex-basis: 300px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 220px;
+    }  
+    h3 {
+        color: #000000;
+        margin: 15px 0 8px 0;
+    }
+    p {
+        font-size: 0.95rem;
+        padding: 0px 10px;
     }
 }
