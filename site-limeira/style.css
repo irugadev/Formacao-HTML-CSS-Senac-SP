@@ -65,7 +65,7 @@ main {
     flex-wrap: wrap;
     gap: 30px;
     * {
-        flex-basis: 250px;
+        flex-basis: 300px;
         flex-grow: 1;
         flex-shrink: 1;
     }
@@ -77,15 +77,15 @@ main {
 
 .card{
     /* 0: descolocamento horizontal, 3px: deslocamento vertical, 10px: desfoque, rgba: cor da sombra */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     /* Aplicar sombra */
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     /* margem interna inferior */
-    border-radius: 10px;
+    border-radius: 20px;
     /*faz o arredondamento das bordas */
     text-align: center;
     img{
-        width:fit-content;
+        width: 100%;
         /* fixa a largura proporcional */
         object-fit: cover;
         /* imagem se ajusta ao container, proporçao original */
