@@ -187,6 +187,7 @@ h2 {
 .voltar{ 
     text-align: center;
     margin-top: 20px;
+    font-size: 25px;
 }
 
 /* formataçao do grid de clinica */
@@ -243,4 +244,81 @@ h2 {
         font-size: 0.95rem;
         padding: 0px 10px;
     }
+}
+
+/* Formataçao das tabelas */
+table{
+    width: 100%;
+    border-collapse: collapse;      /* justa as bordas da tabela em uma só linha */
+}
+th{
+    text-align: start; /* alinhamento a esquerda */ 
+}
+.tabela1 th{
+    background-color: #aaa;
+    border: 2px solid #aaa;
+    padding: 8px;
+}
+.tabela1 td{
+    border: 2px solid #ccc;
+    padding: 8px;
+}
+.tabela1 th:nth-child(3),       /* a virgula serve para juntas as duas linhas sobre o mesmo codigo */
+.tabela1 td:nth-child(3){       /* Pseudo-Seletor */
+    text-align: end;
+    font-weight: 500;
+}
+.tabela1 th:nth-child(4),     
+.tabela1 td:nth-child(4){       
+    text-align: center;
+}
+
+
+.tabela2 th{
+    border-bottom: 2px solid #aaa;
+    padding: 8px;
+}
+.tabela2 td{
+    border-bottom: 1px solid #aaa;
+    padding: 8px;
+}
+.tabela2 tr{
+    border-bottom: 2px #aaa;
+
+}
+.tabela2 th:nth-child(3),
+.tabela2 td:nth-child(3){
+    text-align: end;
+    font-weight: 500;
+}
+.tabela2 th:nth-child(4),     
+.tabela2 td:nth-child(4){       
+    text-align: center;
+}
+
+
+
+.tabela3 tr:nth-child(even){
+    background-color: #ccc;
+}
+/* .tabela3 tr:nth-child(odd){
+    background-color: #f5a2a2;
+} */
+.tabela3 th{
+    background-color: #ccc;
+    border: 2px;
+    padding: 8px;
+}
+.tabela3 td{
+    border: 2px;
+    padding: 8px;
+}
+.tabela3 th:nth-child(3),       /* a virgula serve para juntas as duas linhas sobre o mesmo codigo */
+.tabela3 td:nth-child(3){       /* Pseudo-Seletor */
+    text-align: end;
+    font-weight: 500;
+}
+.tabela3 th:nth-child(4),     
+.tabela3 td:nth-child(4){       
+    text-align: center;
 }
