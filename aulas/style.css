@@ -356,3 +356,28 @@ th{
         /* height: 60vh; */
     }
 }
+
+.grid-convenios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    
+    * {
+        flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding-bottom: 80px;
+    }
+
+    h2{
+        text-decoration: none;
+        color: #0e365f;
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+    i{
+        font-size: 80px;
+        color: #0e365f;
+    }
+}
