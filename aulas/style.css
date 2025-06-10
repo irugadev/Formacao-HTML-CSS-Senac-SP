@@ -143,6 +143,7 @@ h2 {
 .redes-sociais {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 10px;
 
@@ -421,6 +422,39 @@ th{
         margin-top: 25px;
         margin-bottom: 25px;
     }
+}
+
+.agendamento{
+    margin: 0px auto;   /* Centralize o container */
+    width: 50%;
+    text-align: center; /* Centraliza o conteudo do container */
+
+    label{
+        display: block;
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: #555;
+    }
+    .form-group{
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type=date],
+    input[type=time],
+    input[type=text],
+    select{
+        padding: 10px;
+        border:  1px solid #bbb;
+        border-radius:  5px;
+    }
+    input[type=time]{
+        padding: 9px;
+    }
+    input[type=text]{
+        width: 80%;
+    }
     input[type=submit]{
         border-style: none;
         background-color: #3b5998;
@@ -433,5 +467,56 @@ th{
         background-color: #00060a;
 
     }
+    div{
+        margin-top: 30px;
+    }
+}
+/* !important - deve ser usado para dar prioridade a alguma linha de formataçao quando houver conflitos (codigo duplicado) */
 
+/* Formataçao para laoyout responsivo: */
+@media screen and (max-width: 800px){       /* media queries */
+    /* header{
+        background-color: yellowgreen;
+    }   */
+    main{
+        width: 100%;
+    }
+    .grid-home{
+        *{
+            flex-basis: 100%;
+        }
+    }
+    .grid-clinica,
+    .grid-especialidades,
+    .grid-convenios,
+    .form-group{
+        flex-direction: column;
+        align-items: center;
+    }
+    .videos{
+        iframe{
+            width: 95%;
+            height: 30vh;
+        }
+        video{
+            width: 95%;
+        }
+    }
+    .agendamento{
+        width: 100%;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){ 
+    /* header{
+        background-color: crimson;
+    }     */
+}
+@media screen and (max-width: 400px){ 
+    /* header{
+        background-color: aqua;
+    }     */
 }
