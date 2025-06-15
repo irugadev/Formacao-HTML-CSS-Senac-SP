@@ -361,3 +361,28 @@ main {
     display: block;
     justify-content: center;
 }
+
+@media screen and (max-width: 800px){
+    main{
+        width: 100%;
+    }
+    .grid-home{
+        *{
+            flex-basis: 100%;
+        }
+    }
+    .grid-municipio,
+    .grid-comercio,
+    .grid-esporte,
+    .grid-turismo,
+    .grid-pontos,
+    .form-group{
+        flex-direction: column;
+        align-items: center;
+    }
+    .municipio{
+        width: 100%;
+
+    }
+    
+}
