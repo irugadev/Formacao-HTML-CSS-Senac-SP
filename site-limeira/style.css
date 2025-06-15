@@ -19,7 +19,7 @@ header {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffebe2;
+    background:rgb(255, 242, 227)
     /* background-image: url("imagens/cidade.png");
     background-repeat: no-repeat;
     background-size: cover; */
@@ -94,22 +94,15 @@ main {
 }
 
 .card {
-    /* 0: descolocamento horizontal, 3px: deslocamento vertical, 10px: desfoque, rgba: cor da sombra */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    /* Aplicar sombra */
     padding-bottom: 20px;
-    /* margem interna inferior */
     border-radius: 20px;
-    /*faz o arredondamento das bordas */
     text-align: center;
 
     img {
         width: 100%;
-        /* fixa a largura proporcional */
         object-fit: cover;
-        /* imagem se ajusta ao container, proporçao original */
         height: 200px;
-        /* altura original da imagem */
     }
 
     h3 {
@@ -147,7 +140,7 @@ main {
 
     a:nth-child(1) {
         background-color: #3b5998;
-        /* SHIFT+ALT+SETA para copiar linhas */
+
     }
 
     a:nth-child(2) {
@@ -164,6 +157,9 @@ main {
 
     a:nth-child(5) {
         background-color: #000;
+    }
+    a:nth-child(6){
+        background-color: rgb(218, 131, 1);
     }
 }
 
@@ -289,14 +285,79 @@ main {
     iframe{
         width: 80%;
         height: 600px;
+    }
 }
-
 .grid-pontos{
-    display: flex;
+    display: block;
     justify-content: center;
     margin: 20px 10 30px 10px;
     div {
         flex-grow: 1;
         flex-shrink: 1;
     }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th{
+        text-align: center; 
+    }
+    .tabela1 th{
+        background-color: #aaa;
+        border: 2px solid #aaa;
+        padding: 8px;
+    }
+    .tabela1 td{
+        border: 2px solid #ccc;
+        padding: 8px;
+    }
+    ul{
+        margin-top: 15px;
+        padding: 8px;
+        text-align: center;
+        list-style: none;
+        li{
+            line-height: 200%;
+        }
+    }
+}
+
+.grid-contato{
+    display:block;
+    justify-content:center;
+    margin: 5% 20%;
+
+    div{                    
+        flex-basis: 45%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    label{
+        display:flex;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-top: 20px;
+        color:#5e2b01;
+    }
+    input[type=text], input[type=email], textarea{
+        padding: 10px;
+        width: 90%;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
+    select{
+        padding: 5px;
+        border: 2px solid #bbb;
+        border-radius: 5px;
+    }
+    input[type=checkbox]{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+.grid-esporte{
+    display: block;
+    justify-content: center;
 }
